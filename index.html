@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="jquery.js"></script>
+    <script src="client.js"></script>
+    <title>Salary Calculator</title>
+</head>
+<header>
+    <h1>Salary Calculator</h1>
+</header>
+<body>
+    <main>
+        <h4>Add Employee</h4>
+        <input id="firstName" type="text" placeholder="First Name"/>
+        <input id="lastName" type="text" placeholder="Last Name" />
+        <input id="idNumber" type="number" placeholder="ID Number" />
+        <input id="jobTitle" type="text" placeholder="Job Title" />
+        <input id="annualSalary" type="number" placeholder="Annual Salary" />
+    </main>
+    <section>
+        <button id="grabInputs">Submit</button>
+    </section>
+    <section>
+        <h3>Employees</h3>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>ID Number</th>
+                    <th>Job Title</th>
+                    <th>Annual Salary</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="inputsForTable">
+                <tr>
+                    <td>Angela</td>
+                    <td>Johnson</td>
+                    <td>2343</td>
+                    <td>Vet</td>
+                    <td>80,000</td>
+                    <td><button id="removeLine">Delete</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <footer>
+        <h3>Total Monthly: $0.00 </h3>
+    </footer>
+</body>
+</html>
