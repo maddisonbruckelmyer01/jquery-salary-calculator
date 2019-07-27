@@ -18,9 +18,16 @@ function inputTable () {
     <td>${$('#jobTitle').val()}</td>
     <td>${$('#annualSalary').val()}</td>
     </tr>`)
-
+    $('#firstName').val('');
+    $('#lastName').val('');
+    $('#idNumber').val('');
+    $('#jobTitle').val('');
+    $('#annualSalary').val('');
 }//end inputTable
 
+function monthlySalary () {
+   
+}//end monthlySalary
 
 
 
