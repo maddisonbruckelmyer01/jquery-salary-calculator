@@ -11,22 +11,22 @@
     <title>Salary Calculator</title>
 </head>
 <header>
-    <h1 class="jumbotron bg-info">Salary Calculator</h1>
+    <h1 class="jumbotron bg-info container">Salary Calculator</h1>
 </header>
 <body class="container">
-    <main id="empyloee" class="text-center">
-        <h4>Add Employee:</h4>
+    <main id="empyloee" class="text-center container m-3">
+        <h4 class="container">Add Employee:</h4>
         <input id="firstName" type="text" placeholder="First Name"/>
         <input id="lastName" type="text" placeholder="Last Name" />
         <input id="idNumber" type="number" placeholder="ID Number" />
         <input id="jobTitle" type="text" placeholder="Job Title" />
         <input id="annualSalary" type="number" placeholder="Annual Salary" />
     </main>
-    <section class="text-right">
-        <button id="grabInputs">Submit</button>
+    <section class="text-right container">
+        <button id="grabInputs" class="btn btn-success btn-block m-3">Submit</button>
     </section>
     <section>
-        <h3>Employees</h3>
+        <h3 class="font-weight-light">Employees</h3>
         <table class="table table-striped">
             <thead class="thead-dark">
                 <tr>
@@ -43,7 +43,7 @@
         </table>
     </section>
     <footer>
-        <h3 id="money">Total Monthly: $0</h3>
+        <h3 id="money" class="font-weight-light">Total Monthly: $0</h3>
     </footer>
 </body>
 </html>

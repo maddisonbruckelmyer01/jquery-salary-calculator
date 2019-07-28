@@ -39,7 +39,6 @@ function monthlySalary () {
        $('#money').css('background-color', 'red');
        $('#money').css('color', 'white');
    }
-
 }//end monthlySalary
 
 function deleteInputs() {
