@@ -34,7 +34,7 @@ function monthlySalary () {
   // console.log('its working');
    total = (yearlyIncome / 12);
    console.log(total);
-   $('#money').text('Total Monthly: $ ' + total);
+   $('#money').text('Total Monthly: $ ' + total).toFixed(2);
    if (total > 20000) {
        $('#money').css('background-color', 'red');
        $('#money').css('color', 'white');
