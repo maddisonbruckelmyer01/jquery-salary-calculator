@@ -22,7 +22,9 @@ function inputTable () {
     <td>${$('#annualSalary').val()}</td>
     <td><button class="deleteButton">Delete</button></td>
     </tr>`)
+
    yearlyIncome += parseFloat($('#annualSalary').val());
+   
     $('#firstName').val('');
     $('#lastName').val('');
     $('#idNumber').val('');
@@ -34,11 +36,13 @@ function monthlySalary () {
   // console.log('its working');
    total = (yearlyIncome / 12);
    console.log(total);
-   $('#money').text('Total Monthly: $ ' + total).toFixed(2);
+//$('#money').text('Total Monthly: $ ' + total).toFixed(2);(broke code stops function)
    if (total > 20000) {
        $('#money').css('background-color', 'red');
        $('#money').css('color', 'white');
    }
+   // $('#money').text('Total Monthly: $ ' + total).toFixed(2); (doesn't work)
+    $('#money').text('Total Monthly: $ ' + total.toFixed(2)); //(works!!)
 }//end monthlySalary
 
 function deleteInputs() {
